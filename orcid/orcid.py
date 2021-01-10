@@ -66,7 +66,7 @@ class PublicAPI(object):
                 "https://sandbox.orcid.org/oauth/authorize"
             self._login_url = \
                 "https://sandbox.orcid.org/oauth/custom/login.json"
-            self._token_url = "https://api.sandbox.orcid.org/oauth/token"
+            self._token_url = "https://sandbox.orcid.org/oauth/token"
             self._endpoint = "https://pub.sandbox.orcid.org"
         else:
             self._host = "orcid.org"
@@ -74,7 +74,7 @@ class PublicAPI(object):
                 "https://orcid.org/oauth/authorize"
             self._login_url = \
                 'https://orcid.org/oauth/custom/login.json'
-            self._token_url = "https://api.orcid.org/oauth/token"
+            self._token_url = "https://orcid.org/oauth/token"
             self._endpoint = "https://pub.orcid.org"
 
     def get_login_url(self, scope, redirect_uri, state=None,
